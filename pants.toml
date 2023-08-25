@@ -1,0 +1,34 @@
+[GLOBAL]
+pants_version = "2.16.0"
+backend_packages = [
+   "pants.backend.python",
+   "pants.backend.docker",
+]
+local_store_dir = "./.cache"
+
+[source]
+root_patterns = [
+   "src/",
+]
+
+[docker]
+run_args = [
+   "-p","8000:8000",
+   "--rm"
+]
+env_vars = [
+   "DOCKER_DEFAULT_PLATFORM=linux/amd64"
+]
+
+[environments-preview.names]
+docker_python = "//:docker_python"
+
+[python]
+enable_resolves = true
+default_resolve="python-default"
+interpreter_constraints = [
+   "CPython==3.9.*"
+]
+
+[python.resolves]
+python-default = "3rdparty/python/default.lock"
