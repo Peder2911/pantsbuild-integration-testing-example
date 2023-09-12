@@ -5,6 +5,7 @@ pex_binary(
    entry_point = "application",
    execution_mode = "venv",
    include_tools = True,
+   restartable = True,
 )
 docker_image(
    name = "image",

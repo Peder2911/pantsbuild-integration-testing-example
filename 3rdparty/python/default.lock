@@ -11,6 +11,7 @@
 //   "generated_with_requirements": [
 //     "docker==6.1.3",
 //     "fastapi==0.101.1",
+//     "furl==2.1.3",
 //     "pydantic==2.3.0",
 //     "requests==2.31.0",
 //     "uvicorn==0.23.2"
@@ -55,39 +56,35 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "91dee416e570e92c64041bd18b900d1d6fa78dff7048769ce5ac5ddad004fbb5",
-              "url": "https://files.pythonhosted.org/packages/19/24/44299477fe7dcc9cb58d0a57d5a7588d6af2ff403fdd2d47a246c91a3246/anyio-3.7.1-py3-none-any.whl"
+              "hash": "cfdb2b588b9fc25ede96d8db56ed50848b0b649dca3dd1df0b11f683bb9e0b5f",
+              "url": "https://files.pythonhosted.org/packages/36/55/ad4de788d84a630656ece71059665e01ca793c04294c463fd84132f40fe6/anyio-4.0.0-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "44a3c9aba0f5defa43261a8b3efb97891f2bd7d804e0e1f56419befa1adfc780",
-              "url": "https://files.pythonhosted.org/packages/28/99/2dfd53fd55ce9838e6ff2d4dac20ce58263798bd1a0dbe18b3a9af3fcfce/anyio-3.7.1.tar.gz"
+              "hash": "f7ed51751b2c2add651e5747c891b47e26d2a21be5d32d9311dfe9692f3e5d7a",
+              "url": "https://files.pythonhosted.org/packages/74/17/5075225ee1abbb93cd7fc30a2d343c6a3f5f71cf388f14768a7a38256581/anyio-4.0.0.tar.gz"
             }
           ],
           "project_name": "anyio",
           "requires_dists": [
-            "Sphinx; extra == \"doc\"",
+            "Sphinx>=7; extra == \"doc\"",
             "anyio[trio]; extra == \"test\"",
-            "coverage[toml]>=4.5; extra == \"test\"",
-            "exceptiongroup; python_version < \"3.11\"",
+            "coverage[toml]>=7; extra == \"test\"",
+            "exceptiongroup>=1.0.2; python_version < \"3.11\"",
             "hypothesis>=4.0; extra == \"test\"",
             "idna>=2.8",
-            "mock>=4; python_version < \"3.8\" and extra == \"test\"",
             "packaging; extra == \"doc\"",
             "psutil>=5.9; extra == \"test\"",
             "pytest-mock>=3.6.1; extra == \"test\"",
             "pytest>=7.0; extra == \"test\"",
             "sniffio>=1.1",
             "sphinx-autodoc-typehints>=1.2.0; extra == \"doc\"",
-            "sphinx-rtd-theme>=1.2.2; extra == \"doc\"",
-            "sphinxcontrib-jquery; extra == \"doc\"",
-            "trio<0.22; extra == \"trio\"",
+            "trio>=0.22; extra == \"trio\"",
             "trustme; extra == \"test\"",
-            "typing-extensions; python_version < \"3.8\"",
             "uvloop>=0.17; (python_version < \"3.12\" and platform_python_implementation == \"CPython\" and platform_system != \"Windows\") and extra == \"test\""
           ],
-          "requires_python": ">=3.7",
-          "version": "3.7.1"
+          "requires_python": ">=3.8",
+          "version": "4.0.0"
         },
         {
           "artifacts": [
@@ -293,6 +290,27 @@
           "artifacts": [
             {
               "algorithm": "sha256",
+              "hash": "9ab425062c4217f9802508e45feb4a83e54324273ac4b202f1850363309666c0",
+              "url": "https://files.pythonhosted.org/packages/41/ef/a572e03144d18842c480bd25165ec50ddc20b1744b2aeaaae4408a281f6f/furl-2.1.3-py2.py3-none-any.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "5a6188fe2666c484a12159c18be97a1977a71d632ef5bb867ef15f54af39cc4e",
+              "url": "https://files.pythonhosted.org/packages/2a/0a/31a43d63d25f045b88fe7d3267e9ec3ce3820572205a9342c1cdf2ad2ca3/furl-2.1.3.tar.gz"
+            }
+          ],
+          "project_name": "furl",
+          "requires_dists": [
+            "orderedmultidict>=1.0.1",
+            "six>=1.8.0"
+          ],
+          "requires_python": null,
+          "version": "2.1.3"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
               "hash": "e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761",
               "url": "https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl"
             },
@@ -326,6 +344,26 @@
           "requires_dists": [],
           "requires_python": ">=3.5",
           "version": "3.4"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
+              "hash": "43c839a17ee3cdd62234c47deca1a8508a3f2ca1d0678a3bf791c87cf84adbf3",
+              "url": "https://files.pythonhosted.org/packages/04/16/5e95c70bda8fe6ea715005c0db8e602400bdba50ae3c72cb380eba551289/orderedmultidict-1.0.1-py2.py3-none-any.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "04070bbb5e87291cc9bfa51df413677faf2141c73c61d2a5f7b26bea3cd882ad",
+              "url": "https://files.pythonhosted.org/packages/53/4e/3823a27d764bb8388711f4cb6f24e58453e92d6928f4163fdb01e3a3789f/orderedmultidict-1.0.1.tar.gz"
+            }
+          ],
+          "project_name": "orderedmultidict",
+          "requires_dists": [
+            "six>=1.8.0"
+          ],
+          "requires_python": null,
+          "version": "1.0.1"
         },
         {
           "artifacts": [
@@ -497,6 +535,24 @@
           "artifacts": [
             {
               "algorithm": "sha256",
+              "hash": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254",
+              "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+              "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
+            }
+          ],
+          "project_name": "six",
+          "requires_dists": [],
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+          "version": "1.16.0"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
               "hash": "eecefdce1e5bbfb7ad2eeaabf7c1eeb404d7757c379bd1f7e5cce9d8bf425384",
               "url": "https://files.pythonhosted.org/packages/c3/a0/5dba8ed157b0136607c7f2151db695885606968d1fae123dc3391e0cfdbf/sniffio-1.3.0-py3-none-any.whl"
             },
@@ -616,13 +672,13 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "ce54f419dfae71f4bdba69ebe65bf7f0a93fe71bc009ad3a010aacc3eebad537",
-              "url": "https://files.pythonhosted.org/packages/4b/4a/3176388095e5bae6e6a1fbee66c438809230ae0196e7de4af12c5e75c509/websocket_client-1.6.2-py3-none-any.whl"
+              "hash": "6cfc30d051ebabb73a5fa246efdcc14c8fbebbd0330f8984ac3bb6d9edd2ad03",
+              "url": "https://files.pythonhosted.org/packages/0b/50/49e0d7342e5d441d43b525d6c84656ea40aea3e58d530004d07b22bc9b04/websocket_client-1.6.3-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "53e95c826bf800c4c465f50093a8c4ff091c7327023b10bfaff40cf1ef170eaa",
-              "url": "https://files.pythonhosted.org/packages/38/44/d747807b707465625ba5e18371bc7c448925314d7217ced1801162b74ca6/websocket-client-1.6.2.tar.gz"
+              "hash": "3aad25d31284266bcfcfd1fd8a743f63282305a364b8d0948a43bd606acc652f",
+              "url": "https://files.pythonhosted.org/packages/44/34/551f30cbdc0515c39c2e78ef5919615785cd370844e40ada82367c1fab3f/websocket-client-1.6.3.tar.gz"
             }
           ],
           "project_name": "websocket-client",
@@ -634,7 +690,7 @@
             "wsaccel; extra == \"optional\""
           ],
           "requires_python": ">=3.8",
-          "version": "1.6.2"
+          "version": "1.6.3"
         }
       ],
       "platform_tag": null
@@ -647,6 +703,7 @@
   "requirements": [
     "docker==6.1.3",
     "fastapi==0.101.1",
+    "furl==2.1.3",
     "pydantic==2.3.0",
     "requests==2.31.0",
     "uvicorn==0.23.2"
